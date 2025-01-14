@@ -1,232 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Culturals</title>
-</head>
-<body>
-  <header>
-    <h1>Aavishkaar-2025</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Culturals</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgb(3, 3, 100);
+        color: white;
+        font-family: "Google Sans", Arial, sans-serif;
+        margin: 0;
+      }
+      header h1 {
+        font-family: Samarkan, cursive;
+        font-size: 55px;
+        color: white;
+        text-align: center;
+        margin: 20px 0;
+      }
+      nav {
+        padding: 10px 0;
+        background-color: rgb(3, 3, 100);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+      }
 
-  <!--This nav is for a linear tile elements next to next, for direct switch form one tab to another-->
-  <nav>
-    <ul>
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="day1.html">Day-1</a></li>
-      <li><a href="day2.html">Day-2</a></li>
-      <li>Culturals</li>
-      <li><a href="sports.html">Sports</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-    </ul>
-  </nav>
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
 
-  <!--Title&Description-->
-  <section1>
-    <h1>Culturals</h1>
-    <p>Showcase your dance moves in Group Dance or Solo Dance (Fusion), captivate with your voice in Group Singing (Band) and Solo Singing, or express your artistic vision through Short Film, Photography, and Channel Surfing. Test your intellect in the exciting Quiz Competition, game your way to glory in E-Sports, or dazzle with confidence in the Ramp Walk.<br>
-    Join us at Aavishkar-2025 and let your creativity and passion shine!</p>
-</section1><br>
+      nav ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
 
-<!--Coordinator context-->
-  <!--Linear in one line arrangement-->
-  <div>
-    <!--Faculty coordinator-->
-    <div>
-      <h3><b>Faculty Coordinator</b></h3>
-      <p><b>Name:</b> Dr.M.Gopinath</p>
-      <p><b>Designation:</b> Associate Dean-IIC</p>
-      <p><b>Contact:</b> 9994041130</p><br>
-    </div>
-    <!--Student coordinator-->
-    <div>
-      <div1>
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
+      section h1 {
+        color: yellow;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: center;
+      }
+      .card-section {
+        display: flex;
+        justify-content: space-around;
+      }
+      .card {
+        background-color: rgb(2, 2, 54);
+        border-radius: 10px;
+        padding: 20px;
+        min-width: 300px;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+      .card h3 {
+        font-size: 1.7rem;
+        color: yellow;
+      }
+      .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      .note {
+        text-align: center;
+      }
+      .event-card {
+        background-color: rgb(2, 2, 54);
+        min-width: 300px;
+        transition: 0.3s ease-in-out;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .event-card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      .event-section {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+      }
+      .image-div {
+        display: flex;
+        justify-content: center;
+      }
+      .event-header {
+        color: yellow;
+        text-align: center;
+      }
+      .event-button {
+        background: rgba(0, 0, 0, 0.1);
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        color: white;
+        font-family: "Google Sans", Arial, sans-serif;
+        font-size: 1rem;
+        padding: 5px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .event-button-a {
+        text-decoration: none;
+        font-family: "Google Sans", Arial, sans-serif;
+        color: white;
+      }
+      .event-button-div {
+        display: flex;
+        justify-content: center;
+      }
+      footer {
+        background-color: rgb(2, 2, 61);
+        color: white;
+        padding: 20px 0;
+        font-family: "Google Sans", Arial, sans-serif;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      footer .footer-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      footer .footer-links ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+      }
+
+      footer .footer-links ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      footer .footer-links ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      footer .footer-links ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
+
+      footer .contact-info {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer .contact-info p {
+        font-size: 1.1rem;
+      }
+
+      footer .contact-info a {
+        color: rgb(187, 231, 11);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      footer .contact-info a:hover {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Aavishkaar-2025</h1>
+    </header>
+
+    <!--This nav is for a linear tile elements next to next, for direct switch form one tab to another-->
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="day1.html">Day-1</a></li>
+        <li><a href="day2.html">Day-2</a></li>
+        <li style="color: yellow">Culturals</li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!--Title&Description-->
+    <section>
+      <h1>Culturals</h1>
+      <p>
+        Showcase your dance moves in Group Dance or Solo Dance (Fusion),
+        captivate with your voice in Group Singing (Band) and Solo Singing, or
+        express your artistic vision through Short Film, Photography, and
+        Channel Surfing. Test your intellect in the exciting Quiz Competition,
+        game your way to glory in E-Sports, or dazzle with confidence in the
+        Ramp Walk.<br />
+        Join us at Aavishkar-2025 and let your creativity and passion shine!
+      </p>
+    </section>
+    <br />
+
+    <!--Coordinator context-->
+    <!--Linear in one line arrangement-->
+    <div class="card-section">
+      <!--Faculty coordinator-->
+      <div class="card">
+        <h3><b>Faculty Coordinator</b></h3>
+        <p><b>Name:</b> Dr.M.Gopinath</p>
+        <p><b>Designation:</b> Associate Dean-IIC</p>
+        <p><b>Contact:</b> 9994041130</p>
+        <br />
+      </div>
+      <!--Student coordinator-->
+      <div class="card">
         <h3><b>Student Coordinator</b></h3>
         <p><b>Name:</b> Arvindhan.G</p>
         <p><b>Dept & Year:</b> IT & IV yr</p>
-        <p><b>Contact:</b> 9361811963</p><br>
-      </div1>
-      <div2>
+        <p><b>Contact:</b> 9361811963</p>
+        <br />
+      </div>
+      <div class="card">
+        <h3><b>Student Coordinator</b></h3>
         <p><b>Name:</b> Pavithra.V</p>
         <p><b>Dept & Year:</b> CSE-B & IV yr</p>
-        <p><b>Contact:</b> 9498394576</p><br>
-      </div2>
-      <div3>
+        <p><b>Contact:</b> 9498394576</p>
+        <br />
+      </div>
+      <div class="card">
+        <h3><b>Student Coordinator</b></h3>
         <p><b>Name:</b> Dhanush.M</p>
         <p><b>Dept & Year:</b> AI&DS-A & III yr</p>
-        <p><b>Contact:</b> 7395951642</p><br>
-      </div3>
+        <p><b>Contact:</b> 7395951642</p>
+        <br />
+      </div>
     </div>
-  </div>
+    <br />
 
-<!--All events in 2x5 grid with images-->
-<section2>
-  <div>
-    <h2><em>Group Dance</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Group Dance">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="groupdance.html">View</a></button>
-  </div>
-</section2>
+    <!--All events in 2x5 grid with images-->
+    <div class="event-section">
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="Group Dance" />
+        </div>
+        <div>
+          <h2 class="event-header">Group Dance</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="groupdance.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
 
-<section3>
-  <div>
-    <h2><em>Group Singing</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Group Singing">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="groupsinging.html">View</a></button>
-  </div>
-</section3>
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="Group Singing" />
+        </div>
+        <div>
+          <h2 class="event-header">Group Singing</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="groupsinging.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
 
-<section4>
-  <div>
-    <h2><em>Solo Dance</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Solo Dance">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="solodance.html">View</a></button>
-  </div>
-</section4>
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="Solo Dance" />
+        </div>
+        <div class="event-button-div">
+          <h2 class="event-header">Solo Dance</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="solodance.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
 
-<section5>
-  <div>
-    <h2><em>Solo Singing</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Solo Singing">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="solosinging.html">View</a></button>
-  </div>
-</section5>
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="Solo Singing" />
+        </div>
+        <div>
+          <h2 class="event-header">Solo Singing</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="solosinging.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
+    </div>
 
-<section6>
-  <div>
-    <h2><em>Photography</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Photography">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="photography.html">View</a></button>
-  </div>
-</section6>
+    <div class="event-section">
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="Photography" />
+        </div>
+        <div>
+          <h2 class="event-header">Photography</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="photography.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
 
-<section7>
-  <div>
-    <h2><em>ShortFilm</em></h2>
-  </div>
-  <div>
-    <img src="" alt="ShortFilm">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="shortfilm.html">View</a></button>
-  </div>
-</section7>
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="ShortFilm" />
+        </div>
+        <div>
+          <h2 class="event-header">Short Film</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="shortfilm.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
 
-<section8>
-  <div>
-    <h2><em>Channel Surfing</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Channel Surfing">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="channelsurfing.html">View</a></button>
-  </div>
-</section8>
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="Channel Surfing" />
+        </div>
+        <div>
+          <h2 class="event-header">Channel Surfing</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="channelsurfing.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
 
-<section9>
-  <div>
-    <h2><em>Quiz Competetion</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Quiz Competetion">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="quizcompetetion.html">View</a></button>
-  </div>
-</section9>
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="Quiz Competetion" />
+        </div>
+        <div>
+          <h2 class="event-header">Quiz Competition</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="quizcompetetion.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
+    </div>
+    <div class="event-section">
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="Ramp Walk" />
+        </div>
+        <div>
+          <h2 class="event-header">Ramp Walk</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="rampwalk.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="E-Sports" />
+        </div>
+        <div>
+          <h2 class="event-header">E-Sports</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="esports.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
 
-<section10>
-  <div>
-    <h2><em>Ramp Walk</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Ramp Walk">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="rampwalk.html">View</a></button>
-  </div>
-</section10>
+      <section class="event-card">
+        <div class="image-div">
+          <img src="" alt="Music show" />
+        </div>
+        <div>
+          <h2 class="event-header">Music Show</h2>
+        </div>
+        <div class="event-button-div">
+          <!--On clicking this, the click has to be directed to National Conference page-->
+          <button type="button" class="event-button">
+            <a href="musicshow.html" class="event-button-a">View</a>
+          </button>
+        </div>
+      </section>
+    </div>
+    <br />
 
-<section11>
-  <div>
-    <h2><em>E-Sports</em></h2>
-  </div>
-  <div>
-    <img src="" alt="E-Sports">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="esports.html">View</a></button>
-  </div>
-</section11>
+    <!--Note-->
+    <p class="note"><b>Note</b> Each event has individual Registration</p>
+    <br />
 
-<section11>
-  <div>
-    <h2><em>Music Show</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Music show">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="musicshow.html">View</a></button>
-  </div>
-</section11><br>
-
-<!--Note-->
-<p><b>Note</b> Each event has individual Registration</p><br>
-
-<!--Footer that holds the nav properties in a vertical order, with location-->
-<footer>
-  <div>
-    <ul>
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="day1.html">Day-1</a></li>
-      <li><a href="day2.html">Day-2</a></li>
-      <li><a href="sports.html">Sports</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-    </ul>
-  </div>
-  <!--contact-->
-  <div>
-    <p><b>Contact:</b> aavishkaar@velhightech.com</p>
-  </div>
-  <div>
-    <p><b>Address:</b></p>
-    <p>60,Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062</p>
-    <a href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D">G-map</a>
-  </div><br>
-</footer>
-</body>
+    <!--Footer that holds the nav properties in a vertical order, with location-->
+    <footer>
+      <div class="footer-links">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="day1.html">Day-1</a></li>
+          <li><a href="day2.html">Day-2</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <p><b style="color: yellow;">Contact:</b> aavishkaar@velhightech.com</p>
+        <p><b style="color: yellow;">Address:</b></p>
+        <p>
+          60, Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062
+        </p>
+        <a
+          href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+        >
+          View on Google Maps</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>

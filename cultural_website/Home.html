@@ -1,119 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aavishkaar-2025</title>
-</head>
-<body>
-  <!--This header is the title of the page, which follows on all pages-->
-  <header>
-    <h1>Aavishkaar-2025</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aavishkaar-2025</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgb(3, 3, 100);
+        color: white;
+        font-family: "Google Sans", Arial, sans-serif;
+        margin: 0;
+      }
 
-  <!--This nav is for a linear tile elements next to next, for direct switch form one tab to another-->
-  <nav>
-    <ul>
-      <li>Home</li>
-      <li><a href="day1.html">Day-1</a></li>
-      <li><a href="day2.html">Day-2</a></li>
-      <li><a href="culturals.html">Culturals</a></li>
-      <li><a href="sports.html">Sports</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-    </ul>
-  </nav>
+      header h1 {
+        font-family: Samarkan, cursive;
+        font-size: 55px;
+        color: white;
+        text-align: center;
+        margin: 20px 0;
+      }
 
-  <!--section one for national conference-->
-  <section1>
-    <div>
-      <h2><em>Day-1 National Conference</em></h2>
-    </div>
-    <div>
-      <img src="" alt="National Conference">
-    </div>
-    <div>
-      <!--On clicking this, the click has to be directed to National Conference page-->
-      <button type="button"><a href="day1.html">View</a></button>
-    </div>
-  </section1>
+      nav {
+        padding: 10px 0;
+        background-color: rgb(3, 3, 100);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+      }
 
-  <!--Section two is for Project expo-->
-  <section2>
-    <div>
-      <h2><em>Day-2 Project Expo</em></h2>
-    </div>
-    <div>
-      <img src="" alt="Project Expo">
-    </div>
-    <div>
-      <!--On clicking this, the click has to be directed to Project expo page-->
-      <button type="button"><a href="day2.html">View</a></button>
-    </div>
-  </section2>
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
 
-  <!--section three is for culturals and concert-->
-  <section3>
-    <div>
-      <h2><em>Day-3 Culturals and Music Show</em></h2>
-    </div>
-    <div>
-      <img src="" alt="Culturals and Music Show">
-    </div>
-    <div>
-      <!--On clicking this, the click has to be directed to Culturals and Music Show page-->
-      <button type="button"><a href="culturals.html">View</a></button>
-    </div>
-  </section3>
+      nav ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
 
-  <!--section four is for sports-->
-  <section4>
-    <div>
-      <h2><em>Sports</em></h2>
-    </div>
-    <div>
-      <img src="" alt="Sports">
-    </div>
-    <div>
-      <!--On clicking this, the click has to be directed to Culturals and Music Show page-->
-      <button type="button"><a href="sports.html">View</a></button>
-    </div>
-  </section4>
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
 
-  <!--Additional 1-->
-  <section5>
-    <div>
-      <h1>OUR PROCESS</h1>
-    </div>
-    <div>
+      nav ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
+      h2 {
+        color: yellow;
+        text-align: center;
+        font-family: "Google Sans", Arial, sans-serif;
+      }
+      .card-section {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+      section {
+        background-color: rgb(2, 2, 54);
+        border-radius: 10px;
+        min-width: 350px;
+      }
+      .card {
+        padding: 5px;
+      }
+      .image-card {
+        display: flex;
+        justify-content: center;
+      }
+      .card-footer button {
+        background: rgba(0, 0, 0, 0.1);
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        color: white;
+        font-family: "Google Sans", Arial, sans-serif;
+        font-size: 1rem;
+        padding: 5px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .card-footer {
+        display: flex;
+        justify-content: center;
+      }
+      .card-footer button a {
+        text-decoration: none;
+        color: white;
+      }
+      .our-process {
+        background-color: transparent;
+        padding: 20px;
+      }
+
+      .our-process h1 {
+        color: yellow;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      .our-process-div {
+        margin: 40px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .process-card {
+        background-color: rgb(2, 2, 54);
+        min-width: 200px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 20px;
+        font-weight: 800;
+        font-size: 1.3rem;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+      }
+      .process-card:hover {
+        transform: translateY(-15px);
+      }
+      footer {
+        background-color: rgb(2, 2, 61);
+        color: white;
+        padding: 20px 0;
+        font-family: "Google Sans", Arial, sans-serif;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      footer .footer-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      footer .footer-links ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+      }
+
+      footer .footer-links ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      footer .footer-links ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      footer .footer-links ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
+
+      footer .contact-info {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer .contact-info p {
+        font-size: 1.1rem;
+      }
+
+      footer .contact-info a {
+        color: rgb(187, 231, 11);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      footer .contact-info a:hover {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--This header is the title of the page, which follows on all pages-->
+    <header>
+      <h1>Aavishkaar-2025</h1>
+    </header>
+
+    <!--This nav is for a linear tile elements next to next, for direct switch form one tab to another-->
+    <nav>
       <ul>
-        <li>Register</li>
-        <li>Participate</li>
-        <li>Showcase</li>
-        <li>Wine Amazing Rewards</li>
-      </ul>
-    </div>
-  </section5><br><br>
-
-  <!--Footer that holds the nav properties in a vertical order, with location-->
-  <footer>
-    <div>
-      <ul>
+        <li>Home</li>
         <li><a href="day1.html">Day-1</a></li>
         <li><a href="day2.html">Day-2</a></li>
         <li><a href="culturals.html">Culturals</a></li>
         <li><a href="sports.html">Sports</a></li>
         <li><a href="aboutus.html">About Us</a></li>
       </ul>
+    </nav>
+
+    <!--section one for national conference-->
+    <div class="card-section">
+      <section class="card">
+        <div class="image-card">
+          <img src="" alt="National Conference" />
+        </div>
+        <div class="card-header">
+          <h2>Day-1 National Conference</h2>
+        </div>
+        <div class="card-footer">
+          <button type="button"><a href="day1.html">View</a></button>
+        </div>
+      </section>
+
+      <!--Section two is for Project expo-->
+      <section class="card">
+        <div class="image-card">
+          <img src="" alt="Project Expo" />
+        </div>
+        <div>
+          <h2>Day-2 Project Expo</h2>
+        </div>
+        <div class="card-footer">
+          <!--On clicking this, the click has to be directed to Project expo page-->
+          <button type="button"><a href="day2.html">View</a></button>
+        </div>
+      </section>
+
+      <!--section three is for culturals and concert-->
+      <section class="card">
+        <div class="image-card">
+          <img src="" alt="Culturals and Music Show" />
+        </div>
+        <div>
+          <h2>Day-3 Culturals and Music Show</h2>
+        </div>
+        <div class="card-footer">
+          <!--On clicking this, the click has to be directed to Culturals and Music Show page-->
+          <button type="button"><a href="culturals.html">View</a></button>
+        </div>
+      </section>
+
+      <!--section four is for sports-->
+      <section class="card">
+        <div class="image-card">
+          <img src="" alt="Sports" />
+        </div>
+        <div>
+          <h2>Sports</h2>
+        </div>
+        <div class="card-footer">
+          <!--On clicking this, the click has to be directed to Culturals and Music Show page-->
+          <button type="button"><a href="sports.html">View</a></button>
+        </div>
+      </section>
     </div>
-    <!--contact-->
-    <div>
-      <p><b>Contact:</b> aavishkaar@velhightech.com</p>
-    </div>
-    <div>
-      <p><b>Address:</b></p>
-      <p>60,Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062</p>
-      <a href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D">G-map</a>
-    </div><br>
-  </footer>
-</body>
+
+    <!--Additional 1-->
+    <section class="our-process">
+      <div>
+        <h1>OUR PROCESS</h1>
+      </div>
+      <div class="our-process-div">
+        <div class="process-card">Register</div>
+        <div class="process-card">Participate</div>
+        <div class="process-card">Showcase</div>
+        <div class="process-card">Win Amazing Prizes</div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!--Footer that holds the nav properties in a vertical order, with location-->
+    <footer>
+      <!-- Footer Links Section -->
+      <div class="footer-links">
+        <ul>
+          <li><a href="day1.html">Day-1</a></li>
+          <li><a href="day2.html">Day-2</a></li>
+          <li><a href="culturals.html">Culturals</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Section -->
+      <div class="contact-info">
+        <p>
+          <b>Contact:</b>
+          <a href="mailto:aavishkaar@velhightech.com"
+            >aavishkaar@velhightech.com</a
+          >
+        </p>
+        <p><b>Address:</b></p>
+        <p>
+          60, Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062
+        </p>
+        <a
+          href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          >View on Google Maps</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
