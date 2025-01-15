@@ -1,314 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Expo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: rgb(3, 3, 100);
-      color: white;
-      font-family: "Google Sans", Arial, sans-serif;
-      margin: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Expo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgb(3, 3, 100);
+        color: white;
+        font-family: "Google Sans", Arial, sans-serif;
+        margin: 0;
+      }
 
-    header h1 {
-      font-family: Samarkan, cursive;
-      font-size: 55px;
-      color: white;
-      text-align: center;
-      margin: 20px 0;
-    }
+      header h1 {
+        font-family: Samarkan, cursive;
+        font-size: 55px;
+        color: white;
+        text-align: center;
+        margin: 20px 0;
+      }
 
-    nav {
-      padding: 10px 0;
-      background-color: rgb(3, 3, 100);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-    }
+      nav {
+        padding: 10px 0;
+        background-color: rgb(3, 3, 100);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+      }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
 
-    nav ul li {
-      margin: 0 15px;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
+      nav ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
 
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      padding: 8px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
 
-    nav ul li a:hover {
-      background-color: rgb(187, 231, 11);
-      color: #111111;
-    }
+      nav ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
 
-    .content {
-      margin: 20px;
-    }
+      .content {
+        margin: 20px;
+      }
 
-    .content h1 {
-      color: yellow;
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+      .content h1 {
+        color: yellow;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-    .content p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      text-align: center;
-    }
+      .content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: center;
+      }
 
-    .card-section {
-      display: flex;
-      justify-content: space-around;
-      padding: 30px;
-    }
+      .card-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+      }
 
-    .card {
-      background-color: rgb(2, 2, 54);
-      border-radius: 10px;
-      padding: 20px;
-      min-width: 300px;
-      text-align: center;
-      transition: 0.3s ease-in-out;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-    }
+      .card {
+        background-color: rgb(2, 2, 54);
+        border-radius: 10px;
+        padding: 20px;
+        min-width: 300px;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
 
-    .card:hover {
-      transform: translateY(-15px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    }
+      .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
 
-    .card h3 {
-      font-size: 1.7rem;
-      color: yellow;
-    }
+      .card h3 {
+        font-size: 1.7rem;
+        color: yellow;
+      }
 
-    footer {
-      background-color: rgb(2, 2, 61);
-      color: white;
-      padding: 20px 0;
-      font-family: "Google Sans", Arial, sans-serif;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+      footer {
+        background-color: rgb(2, 2, 61);
+        color: white;
+        padding: 20px 0;
+        font-family: "Google Sans", Arial, sans-serif;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
 
-    footer .footer-links {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
+      footer .footer-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
 
-    footer .footer-links ul {
-      list-style: none;
-      display: flex;
-      padding: 0;
-    }
+      footer .footer-links ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+      }
 
-    footer .footer-links ul li {
-      margin: 0 15px;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
+      footer .footer-links ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
 
-    footer .footer-links ul li a {
-      text-decoration: none;
-      color: white;
-      padding: 8px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
+      footer .footer-links ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
 
-    footer .footer-links ul li a:hover {
-      background-color: rgb(187, 231, 11);
-      color: #111111;
-    }
+      footer .footer-links ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
 
-    footer .contact-info {
-      text-align: center;
-      margin-top: 20px;
-    }
+      footer .contact-info {
+        text-align: center;
+        margin-top: 20px;
+      }
 
-    footer .contact-info p {
-      font-size: 1.1rem;
-    }
+      footer .contact-info p {
+        font-size: 1.1rem;
+      }
 
-    footer .contact-info a {
-      color: rgb(187, 231, 11);
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
+      footer .contact-info a {
+        color: rgb(187, 231, 11);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
 
-    footer .contact-info a:hover {
-      color: white;
-    }
+      footer .contact-info a:hover {
+        color: white;
+      }
 
-    .button-register {
-      background: rgb(187, 231, 11);
-      color: #111111;
-      padding: 12px 30px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 20px;
-      text-decoration: none;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      display: block;
-      text-align: center;
-    }
+      .button-register {
+        background: rgb(187, 231, 11);
+        color: #111111;
+        padding: 12px 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        display: block;
+        text-align: center;
+      }
 
-    .button-register:hover {
-      background-color: rgb(3, 3, 100);
-      color: white;
-    }
-    
-    .note-card {
-      background-color: rgb(2, 2, 54);
-      border-radius: 10px;
-      padding: 10px;
-      max-width: 600px;
-      text-align: left;
-      margin-bottom: 20px;
-    }
-    .note-card h3{
-      color: yellow;
-    }
+      .button-register:hover {
+        background-color: rgb(3, 3, 100);
+        color: white;
+      }
 
-    .note-card ul li {
-      font-size: 1rem;
-    }
+      .note-card {
+        background-color: rgb(2, 2, 54);
+        border-radius: 10px;
+        padding: 10px;
+        max-width: 600px;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .note-card h3 {
+        color: yellow;
+        text-align: center;
+      }
 
-    .div-before-button {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px;
-    }
-    .note-section{
-      display: flex;
-      justify-content: space-around;
-    }
-    .note-header{
-      color: yellow;
-    }
-   ul li .point{
-      text-align: left;
-    }
-    .image-div{
-      display: flex;
-      justify-content: center;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Aavishkaar-2025</h1>
-  </header>
+      .note-card ul li {
+        font-size: 1rem;
+      }
 
-  <nav>
-    <ul>
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="day1.html">Day-1</a></li>
-      <li style="color: yellow;">Day-2</li>
-      <li><a href="culturals.html">Culturals</a></li>
-      <li><a href="sports.html">Sports</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-    </ul>
-  </nav>
+      .div-before-button {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+      }
+      .note-section {
+        display: flex;
+        justify-content: space-around;
+      }
+      .note-header {
+        color: yellow;
+      }
+      ul li .point {
+        text-align: left;
+      }
+      .image-div {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Aavishkaar-2025</h1>
+    </header>
 
-  <div class="content">
-    <h1>Project Expo 2025</h1>
-    <p>The Project Expo is a platform for showcasing innovative projects and ideas. This event invites participants to present working models, prototypes, or products in front of an esteemed panel of judges. It encourages creativity, problem-solving, and practical applications of technical knowledge. AAVISHKAAR-2025 offers an ideal stage for students to demonstrate their engineering skills and innovations.</p><br>
-    <div class="image-div">
-      <img src="poster\culturals\Day2\ProjectExpo.jpeg" alt="Project Expo Poster" height="700" style="border-radius: 10px;">
-    </div>
-    <div class="card-section">
-      <div class="card">
-        <h3>Faculty Coordinator</h3>
-        <p><b>Name:</b> Prof. Pradeep Katta</p>
-        <p><b>Designation:</b> HoD of Science and Humanity Department</p>
-        <p><b>Contact:</b> 9940227242</p>
-      </div>
-      <div class="card">
-        <h3>Student Coordinator</h3>
-        <p><b>Name:</b> Devaraj</p>
-        <p><b>Dept & Year:</b> ECE-A & IV yr</p>
-        <p><b>Contact:</b> 9841303982</p>
-      </div>
-      <div class="card">
-        <h3>Student Coordinator</h3>
-        <p><b>Name:</b> Dharshini. G</p>
-        <p><b>Dept & Year:</b> CSE-A & III yr</p>
-        <p><b>Contact:</b> 8248893211</p>
-      </div>
-    </div>
-
-    <div class="note-section">
-      <div class="note-card">
-        <h3>Rules and Guidelines</h3>
-        <ul>
-          <li><p><b>Team Size:</b> Maximum of 4 members per team</p></li>
-          <li><p><b>Time Limit:</b> Each team gets 10 minutes to present. Strict adherence to the time limit is required.</p></li>
-          <li><p><b>Round Structure:</b> Only one round with one presentation opportunity per team.</p></li>
-        </ul>
-      </div>
-  
-      <div class="note-card">
-        <h3>Requirements</h3>
-        <ul>
-          <li><p>Teams must display a standup model, working model, or product.</p></li>
-          <li><p>A PowerPoint Presentation (PPT) is optional.</p></li>
-          <li><p>Power supply and electricity will be provided on-site.</p></li>
-          <li><p>Teams must arrange the necessary components for their models or prototypes.</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="note-header">Note</h3>
-    <ul>
-      <li><p class="point">One chance to present for each team.</p></li>
-      <li><p class="point">Ensure the model is functional and displays technical prowess.</p></li>
-    </ul>
-    <div class="div-before-button">
-      <p><b>Registration Fee:</b> Rs.500 per Team</p>
-      <p><b>Registration Deadline:</b> March 1st, 2025</p>
-    </div>
-    
-
-    <a class="button-register" href="https://forms.gle/1JCqNarQVXrzhJa8A">Register</a>
-  </div>
-
-  <footer>
-    <div class="footer-links">
+    <nav>
       <ul>
         <li><a href="Home.html">Home</a></li>
         <li><a href="day1.html">Day-1</a></li>
+        <li style="color: yellow">Day-2</li>
         <li><a href="culturals.html">Culturals</a></li>
         <li><a href="sports.html">Sports</a></li>
         <li><a href="aboutus.html">About Us</a></li>
       </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Project Expo 2025</h1>
+      <p>
+        The Project Expo is a platform for showcasing innovative projects and
+        ideas. This event invites participants to present working models,
+        prototypes, or products in front of an esteemed panel of judges. It
+        encourages creativity, problem-solving, and practical applications of
+        technical knowledge. AAVISHKAAR-2025 offers an ideal stage for students
+        to demonstrate their engineering skills and innovations.
+      </p>
+      <br />
+      <div class="image-div">
+        <img
+          src="poster\culturals\Day2\ProjectExpo.jpeg"
+          alt="Project Expo Poster"
+          height="700"
+          style="border-radius: 10px"
+        />
+      </div>
+      <div class="card-section">
+        <div class="card">
+          <h3>Faculty Coordinator</h3>
+          <p><b>Name:</b> Prof. Pradeep Katta</p>
+          <p><b>Designation:</b> HoD of Science and Humanity Department</p>
+          <p><b>Contact:</b> 9940227242</p>
+        </div>
+        <div class="card">
+          <h3>Student Coordinator</h3>
+          <p><b>Name:</b> Devaraj</p>
+          <p><b>Dept & Year:</b> ECE-A & IV yr</p>
+          <p><b>Contact:</b> 9841303982</p>
+        </div>
+        <div class="card">
+          <h3>Student Coordinator</h3>
+          <p><b>Name:</b> Dharshini. G</p>
+          <p><b>Dept & Year:</b> CSE-A & III yr</p>
+          <p><b>Contact:</b> 8248893211</p>
+        </div>
+      </div>
+
+      <div class="note-section">
+        <div class="note-card">
+          <h3>Rules and Guidelines</h3>
+          <ul>
+            <li>
+              <p><b>Team Size:</b> Maximum of 4 members per team</p>
+            </li>
+            <li>
+              <p>
+                <b>Time Limit:</b> Each team gets 10 minutes to present. Strict
+                adherence to the time limit is required.
+              </p>
+            </li>
+            <li>
+              <p>
+                <b>Round Structure:</b> Only one round with one presentation
+                opportunity per team.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="note-card">
+          <h3>Requirements</h3>
+          <ul>
+            <li>
+              <p>
+                Teams must display a standup model, working model, or product.
+              </p>
+            </li>
+            <li><p>A PowerPoint Presentation (PPT) is optional.</p></li>
+            <li>
+              <p>Power supply and electricity will be provided on-site.</p>
+            </li>
+            <li>
+              <p>
+                Teams must arrange the necessary components for their models or
+                prototypes.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="note-header">Note</h3>
+      <ul>
+        <li><p class="point">One chance to present for each team.</p></li>
+        <li>
+          <p class="point">
+            Ensure the model is functional and displays technical prowess.
+          </p>
+        </li>
+      </ul>
+      <div class="div-before-button">
+        <p><b>Registration Fee:</b> Rs.500 per Team</p>
+        <p><b>Registration Deadline:</b> March 1st, 2025</p>
+      </div>
+
+      <a class="button-register" href="https://forms.gle/1JCqNarQVXrzhJa8A"
+        >Register</a
+      >
     </div>
-    <div class="contact-info">
-      <p><b style="color: yellow;">Contact:</b> aavishkaar@velhightech.com</p>
-      <p><b style="color: yellow;">Address:</b> 60,Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062</p>
-      <a href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D">View on Google Maps</a>
-    </div>
-  </footer>
-</body>
+
+    <footer>
+      <div class="footer-links">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="day1.html">Day-1</a></li>
+          <li><a href="culturals.html">Culturals</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="contact-info">
+        <p><b style="color: yellow">Contact:</b> aavishkaar@velhightech.com</p>
+        <p>
+          <b style="color: yellow">Address:</b> 60,Avadi-Vel Tech Road Vel Nagar
+          Avadi, Chennai, Tamil Nadu 600062
+        </p>
+        <a
+          href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+          >View on Google Maps</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
