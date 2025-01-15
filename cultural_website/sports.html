@@ -4,6 +4,207 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sports</title>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  <style>
+    body {
+        background-color: rgb(3, 3, 100);
+        color: white;
+        font-family: "Google Sans", Arial, sans-serif;
+        margin: 0;
+      }
+
+      header h1 {
+        font-family: Samarkan, cursive;
+        font-size: 55px;
+        color: white;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      nav {
+        padding: 10px 0;
+        background-color: rgb(3, 3, 100);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
+      .content {
+        margin: 20px;
+      }
+
+      .content h1 {
+        color: yellow;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: center;
+      }
+      .card-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+      }
+
+      .card {
+        background-color: rgb(2, 2, 54);
+        border-radius: 10px;
+        padding: 20px;
+        min-width: 300px;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+      .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .card h2 {
+        font-size: 1.7rem;
+        color: yellow;
+      }
+      .event-header{
+        color: yellow;
+        text-align: center;
+        font-size: 1.5rem;      
+      }
+      .event-card {
+        background-color: rgb(2, 2, 54);
+        min-width: 300px;
+        transition: 0.3s ease-in-out;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .event-card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      .event-div{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+      }
+      .event-button {
+        background: rgba(0, 0, 0, 0.1);
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        color: white;
+        font-family: "Google Sans", Arial, sans-serif;
+        font-size: 1rem;
+        padding: 5px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .event-button-a {
+        text-decoration: none;
+        font-family: "Google Sans", Arial, sans-serif;
+        color: white;
+      }
+      .event-button-div {
+        display: flex;
+        justify-content: center;
+      }
+      .image-div {
+        display: flex;
+        justify-content: center;
+      }
+      footer {
+        background-color: rgb(2, 2, 61);
+        color: white;
+        padding: 20px 0;
+        font-family: "Google Sans", Arial, sans-serif;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      footer .footer-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      footer .footer-links ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+      }
+
+      footer .footer-links ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      footer .footer-links ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      footer .footer-links ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
+
+      footer .contact-info {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer .contact-info p {
+        font-size: 1.1rem;
+      }
+
+      footer .contact-info a {
+        color: rgb(187, 231, 11);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      footer .contact-info a:hover {
+        color: white;
+      }
+
+  </style>
 </head>
 <body>
   <header>
@@ -17,232 +218,249 @@
       <li><a href="day1.html">Day-1</a></li>
       <li><a href="day2.html">Day-2</a></li>
       <li><a href="culturals.html">Culturals</a></li>
-      <li>Sports</li>
+      <li style="color: yellow;">Sports</li>
       <li><a href="aboutus.html">About Us</a></li>
     </ul>
   </nav>
 
   <!--Title&Description-->
-  <section1>
+  <section class="content">
     <h1>Sports</h1>
     <p>Showcase your skills in exciting team events like Cricket, Futsal (Football), Volleyball, Kabaddi, Kho Kho, and Throwball, or test your individual prowess in Table Tennis and Chess. Experience the spirit of competition, sportsmanship, and strategy in this dynamic platform for athletes to shine<br>
     Join us at AAVISHKAAR-2025 and bring your energy, passion, and team spirit to the field!</p>
-</section1><br>
+</section><br>
 
 <!--Coordinator context-->
   <!--Linear in one line arrangement-->
-  <div>
+  <div class="card-section">
     <!--Faculty coordinator-->
-    <div>
-      <h3><b>Faculty Coordinator</b></h3>
+    <div class="card">
+      <h2><b>Faculty Coordinator</b></h2>
       <p><b>Name:</b> Karthik prakash</p>
       <p><b>Designation:</b> Physical Director</p>
       <p><b>Contact:</b> 9941678769</p><br>
     </div>
     <!--Student coordinator-->
-    <div>
-      <div1>
-        <h3><b>Student Coordinator</b></h3>
+      <div class="card">
+        <h2><b>Student Coordinator</b></h2>
         <p><b>Name:</b> Kamesh. K</p>
         <p><b>Dept & Year:</b> ECE-A & III yr</p>
         <p><b>Contact:</b> 8015861761</p><br>
-      </div1>
-      <div2>
+      </div>
+      <div class="card">
         <p><b>Name:</b> Girl</p>
         <p><b>Dept & Year:</b> Dept & Year</p>
         <p><b>Contact:</b> Contact</p><br>
-      </div2>
-    </div>
+      </div>
   </div>
 
   <!--Boys events-->
-  <div>
+  <div class="event-header">
     <h2>Mens Sport Events 2025</h2>
   </div>
 <!--All events in 2x5 grid with images-->
-<section2>
-  <div>
-    <h2><em>Futsal</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Futsal">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="futsal.html">View</a></button>
-  </div>
-</section2>
+<div class="event-div">
+  <section class="event-card">
+    <div class="image-div">
+      <img src="" alt="Futsal">
+    </div>
+    <div>
+      <h2 class="event-header">Futsal</h2>
+    </div>
+    <div class="event-button-div" >
+      <!--On clicking this, the click has to be directed to National Conference page-->
+      <button type="button" class="event-button"><a href="futsal.html" class="event-button-a">View</a></button>
+    </div>
+  </section>
+  
+  <section class="event-card">
+    <div class="image-div">
+      <img src="" alt="Cricket">
+    </div>
+    <div>
+      <h2 class="event-header">Cricket</h2>
+    </div>
+    <div class="event-button-div">
+      <!--On clicking this, the click has to be directed to National Conference page-->
+      <button type="button" class="event-button"><a href="cricket.html" class="event-button-a">View</a></button>
+    </div>
+  </section>
+  
+  <section class="event-card">
+    <div class="image-div">
+      <img src="" alt="Kho-Kho">
+    </div>
+    <div>
+      <h2 class="event-header">Kho-Kho</h2>
+    </div>
+    <div class="event-button-div">
+      <!--On clicking this, the click has to be directed to National Conference page-->
+      <button type="button" class="event-button"><a href="khokho.html" class="event-button-a">View</a></button>
+    </div>
+  </section>
+  
+  <section class="event-card">
+    <div class="image-div">
+      <img src="" alt="Kabaddi">
+    </div>
+    <div>
+      <h2 class="event-header">Kabbadi</h2>
+    </div>
+    <div class="event-button-div">
+      <!--On clicking this, the click has to be directed to National Conference page-->
+      <button type="button" class="event-button"><a href="kabbadi.html" class="event-button-a">View</a></button>
+    </div>
+  </section>
+</div>
 
-<section3>
-  <div>
-    <h2><em>Cricket</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Cricket">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="cricket.html">View</a></button>
-  </div>
-</section3>
-
-<section4>
-  <div>
-    <h2><em>Kho-Kho</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Kho-Kho">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="khokho.html">View</a></button>
-  </div>
-</section4>
-
-<section5>
-  <div>
-    <h2><em>Kabbadi</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Kabbadi">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="kabbadi.html">View</a></button>
-  </div>
-</section5>
-
-<section6>
-  <div>
-    <h2><em>Volleyball</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Volleyball">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="volleyball.html">View</a></button>
-  </div>
-</section6>
-
-<section7>
-  <div>
-    <h2><em>Table Tennis</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Table Tennis">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="tabletennis.html">View</a></button>
-  </div>
-</section7>
-
-<section8>
-  <div>
-    <h2><em>Chess</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Chess">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="chess.html">View</a></button>
-  </div>
-</section8><br><br>
+<div class="event-div">
+  <section class="event-card">
+    <div class="image-div">
+      <img src="" alt="Volleyball">
+    </div>
+    <div>
+      <h2 class="event-header">Volleyball</h2>
+    </div>
+    <div class="event-button-div">
+      <!--On clicking this, the click has to be directed to National Conference page-->
+      <button type="button" class="event-button"><a href="volleyball.html" class="event-button-a">View</a></button>
+    </div>
+  </section>
+  
+  <section class="event-card">
+    <div class="image-div">
+      <img src="" alt="Table Tennis">
+    </div>
+    <div>
+      <h2 class="event-header">Table Tennis</h2>
+    </div>
+    <div class="event-button-div">
+      <!--On clicking this, the click has to be directed to National Conference page-->
+      <button type="button" class="event-button"><a href="tabletennis.html" class="event-button-a">View</a></button>
+    </div>
+  </section>
+  
+  <section class="event-card">
+    <div class="image-div">
+      <img src="" alt="Chess">
+    </div>
+    <div>
+      <h2 class="event-header">Chess</h2>
+    </div>
+    <div class="event-button-div">
+      <!--On clicking this, the click has to be directed to National Conference page-->
+      <button type="button" class="event-button"><a href="chess.html" class="event-button-a">View</a></button>
+    </div>
+  </section>
+</div><br><br>
 
 <!--Girls events-->
-<div>
-  <h2>Womens Sport Events 2025</h2>
+<div class="">
+  <h2 style="color: yellow; font-size: 2.5rem; text-align: center;">Womens Sport Events 2025</h2>
 </div>
-<section9>
-  <div>
-    <h2><em>Throwball</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Throwball">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="throwball.html">View</a></button>
-  </div>
-</section9>
+<div class="event-div">
+  <section class="event-card">
+    <div class="image-div">
+      <img src="" alt="Kabaddi">
+    </div>
+    <div>
+      <h2 class="event-header">Kabaddi</h2>
+    </div>
+    <div class="event-button-div">
+      <button type="button" class="event-button">
+        <a href="kabbadi.html" class="event-button-a">View</a>
+      </button>
+    </div>
+  </section>
+  
+  <section class="event-card">
+    <div class="image-div">
+      <img src="" alt="Throwball">
+    </div>
+    <div>
+      <h2 class="event-header">Throwball</h2>
+    </div>
+    <div class="event-button-div">
+      <button type="button" class="event-button">
+        <a href="throwball.html" class="event-button-a">View</a>
+      </button>
+    </div>
+  </section>
+</div>
 
-<section10>
-  <div>
-    <h2><em>Kabbadi</em></h2>
-  </div>
-  <div>
-    <img src="" alt="Kabbadi">
-  </div>
-  <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="kabbadig.html">View</a></button>
-  </div>
-</section10>
 
-<section11>
-  <div>
-    <h2><em>Kho-Kho</em></h2>
-  </div>
-  <div>
+
+<div class="event-div">
+  <section class="event-card">
+  <div class="image-div">
     <img src="" alt="Kho-Kho">
   </div>
   <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="khokhog.html">View</a></button>
+    <h2 class="event-header">Kho-Kho</h2>
   </div>
-</section11>
+  <div class="event-button-div">
+    <button type="button" class="event-button">
+      <a href="khokhog.html" class="event-button-a">View</a>
+    </button>
+  </div>
+</section>
 
-<section12>
-  <div>
-    <h2><em>Table Tennis</em></h2>
-  </div>
-  <div>
+<section class="event-card">
+  <div class="image-div">
     <img src="" alt="Table Tennis">
   </div>
   <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="tabletennisg.html">View</a></button>
+    <h2 class="event-header">Table Tennis</h2>
   </div>
-</section12>
+  <div class="event-button-div">
+    <button type="button" class="event-button">
+      <a href="tabletennisg.html" class="event-button-a">View</a>
+    </button>
+  </div>
+</section>
 
-<section13>
-  <div>
-    <h2><em>Chess</em></h2>
-  </div>
-  <div>
+<section class="event-card">
+  <div class="image-div">
     <img src="" alt="Chess">
   </div>
   <div>
-    <!--On clicking this, the click has to be directed to National Conference page-->
-    <button type="button"><a href="chessg.html">View</a></button>
+    <h2 class="event-header">Chess</h2>
   </div>
-</section13><br>
+  <div class="event-button-div">
+    <button type="button" class="event-button">
+      <a href="chessg.html" class="event-button-a">View</a>
+    </button>
+  </div>
+</section>
+</div>
+<br>
 
 <!--Note-->
-<p><b>Note</b> Each event has individual Registration</p><br>
+<p style="text-align: center; font-size: 1.2rem;"><b>Note</b> Each event has individual Registration</p><br>
 
 <!--Footer that holds the nav properties in a vertical order, with location-->
 <footer>
-  <div>
+  <div class="footer-links">
     <ul>
       <li><a href="Home.html">Home</a></li>
       <li><a href="day1.html">Day-1</a></li>
       <li><a href="day2.html">Day-2</a></li>
-      <li><a href="sports.html">Sports</a></li>
+      <li><a href="culturals.html">Culturals</a></li>
       <li><a href="aboutus.html">About Us</a></li>
     </ul>
   </div>
-  <!--contact-->
-  <div>
-    <p><b>Contact:</b> aavishkaar@velhightech.com</p>
+  <div class="contact-info">
+    <p><b style="color: yellow;">Contact:</b> aavishkaar@velhightech.com</p>
+    <p><b style="color: yellow;">Address:</b></p>
+    <p>
+      60, Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062
+    </p>
+    <a
+      href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+    >
+      View on Google Maps</a
+    >
   </div>
-  <div>
-    <p><b>Address:</b></p>
-    <p>60,Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062</p>
-    <a href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D">G-map</a>
-  </div><br>
 </footer>
 </body>
 </html>
