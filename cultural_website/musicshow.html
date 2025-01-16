@@ -4,59 +4,190 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Show</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background-color: rgb(3, 3, 100);
+      color: white;
+      font-family: "Google Sans", Arial, sans-serif;
+      margin: 0;
+    }
+
+    header h1 {
+      font-family: Samarkan, cursive;
+      font-size: 55px;
+      color: white;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav {
+      padding: 10px 0;
+      background-color: rgb(3, 3, 100);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: rgb(187, 231, 11);
+      color: #111111;
+    }
+
+    .content {
+      margin: 20px;
+    }
+
+    .content h1 {
+      color: yellow;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .image-div {
+      display: flex;
+      justify-content: center;
+    }
+
+    footer {
+      background-color: rgb(2, 2, 61);
+      color: white;
+      padding: 20px 0;
+      font-family: "Google Sans", Arial, sans-serif;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    footer .footer-links ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+    }
+
+    footer .footer-links ul li {
+      margin: 0 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    footer .footer-links ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    footer .footer-links ul li a:hover {
+      background-color: rgb(187, 231, 11);
+      color: #111111;
+    }
+
+    footer .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    footer .contact-info p {
+      font-size: 1.1rem;
+    }
+
+    footer .contact-info a {
+      color: rgb(187, 231, 11);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    footer .contact-info a:hover {
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <!--This header is the title of the page, which follows on all pages-->
   <header>
     <h1>Aavishkaar-2025</h1>
   </header>
 
-  <!--This nav is for a linear tile elements next to next, for direct switch form one tab to another-->
   <nav>
     <ul>
-      <li>Home</li>
+      <li><a href="Home.html">Home</a></li>
       <li><a href="day1.html">Day-1</a></li>
       <li><a href="day2.html">Day-2</a></li>
-      <li>Culturals</li>
+      <li style="color: yellow">Culturals</li>
       <li><a href="sports.html">Sports</a></li>
       <li><a href="aboutus.html">About Us</a></li>
     </ul>
   </nav>
 
-  <!--section one for national conference-->
-  <section1>
-    <div>
-      <h1><em>Music Show</em></h1>
+  <div class="content">
+    <h1>Music Show</h1>
+    <p>The Music Show at AAVISHKAAR-2025 is a spectacular event that celebrates the power and beauty of music. Participants will showcase their talents and captivate audiences with unforgettable performances.</p>
+    <br />
+    <div class="image-div">
+      <img src="" alt="Music Show" height="700" style="border-radius: 10px" />
     </div>
-    <div>
-      <img src="" alt="Music Show">
-    </div>
-    <div>
-      <p>Content</p>
-    </div>
-  </section1><br><br>
-  <!--Not yet declared-->
+  </div>
+  <br />
 
-  <!--Footer that holds the nav properties in a vertical order, with location-->
   <footer>
-    <div>
+    <div class="footer-links">
       <ul>
+        <li><a href="Home.html">Home</a></li>
         <li><a href="day1.html">Day-1</a></li>
         <li><a href="day2.html">Day-2</a></li>
-        <li><a href="culturals.html">Culturals</a></li>
         <li><a href="sports.html">Sports</a></li>
         <li><a href="aboutus.html">About Us</a></li>
       </ul>
     </div>
-    <!--contact-->
-    <div>
-      <p><b>Contact:</b> aavishkaar@velhightech.com</p>
+    <div class="contact-info">
+      <p><b style="color: yellow">Contact:</b> aavishkaar@velhightech.com</p>
+      <p>
+        <b style="color: yellow">Address:</b> 60, Avadi-Vel Tech Road Vel Nagar
+        Avadi, Chennai, Tamil Nadu 600062
+      </p>
+      <a
+        href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+        >View on Google Maps</a
+      >
     </div>
-    <div>
-      <p><b>Address:</b></p>
-      <p>60,Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062</p>
-      <a href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D">G-map</a>
-    </div><br>
   </footer>
 </body>
 </html>

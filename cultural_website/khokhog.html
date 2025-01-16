@@ -4,6 +4,219 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Womens Kho-Kho</title>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgb(3, 3, 100);
+        color: white;
+        font-family: "Google Sans", Arial, sans-serif;
+        margin: 0;
+      }
+
+      header h1 {
+        font-family: Samarkan, cursive;
+        font-size: 55px;
+        color: white;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      nav {
+        padding: 10px 0;
+        background-color: rgb(3, 3, 100);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
+      .content {
+        margin: 20px;
+      }
+
+      .content h1 {
+        color: yellow;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: center;
+      }
+      .card-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+      }
+
+      .card {
+        background-color: rgb(2, 2, 54);
+        border-radius: 10px;
+        padding: 20px;
+        min-width: 300px;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .card h3 {
+        font-size: 1.7rem;
+        color: yellow;
+      }
+      .note-card {
+        background-color: rgb(2, 2, 54);
+        border-radius: 10px;
+        padding: 10px;
+        max-width: 600px;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .note-card h3 {
+        color: yellow;
+        text-align: center;
+      }
+
+      .note-card ul li {
+        font-size: 1rem;
+      }
+
+      .note-section {
+        display: flex;
+        justify-content: space-around;
+      }
+      .note-header {
+        color: yellow;
+        margin-left: 15px;
+        font-size: 1.2rem;
+      }
+
+      ul li .point {
+        text-align: left;
+      }
+      .div-before-button {
+        display: flex;
+        justify-content: space-around;
+      }
+      .button-register {
+        background: rgb(187, 231, 11);
+        color: #111111;
+        padding: 12px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-align: center;
+        width: 100%;
+      }
+
+      .button-register:hover {
+        background-color: rgb(3, 3, 100);
+        color: white;
+      }
+
+      footer {
+        background-color: rgb(2, 2, 61);
+        color: white;
+        padding: 20px 0;
+        font-family: "Google Sans", Arial, sans-serif;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      footer .footer-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      footer .footer-links ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+      }
+      .image-div {
+        display: flex;
+        justify-content: center;
+      }
+      footer .footer-links ul li {
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      footer .footer-links ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      footer .footer-links ul li a:hover {
+        background-color: rgb(187, 231, 11);
+        color: #111111;
+      }
+
+      footer .contact-info {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer .contact-info p {
+        font-size: 1.1rem;
+      }
+
+      footer .contact-info a {
+        color: rgb(187, 231, 11);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      footer .contact-info a:hover {
+        color: white;
+      }
+    </style>
 </head>
 <body>
   <header>
@@ -17,16 +230,18 @@
       <li><a href="day1.html">Day-1</a></li>
       <li><a href="day2.html">Day-2</a></li>
       <li><a href="culturals.html">Culturals</a></li>
-      <li>Sports</li>
+      <li style="color: yellow;">Sports</li>
       <li><a href="aboutus.html">About Us</a></li>
     </ul>
   </nav>
 
   <!--Title&context-->
-  <div>
+  <div class="content">
     <h1>Kho-Kho</h1>
     <p>The Kho Kho event at AAVISHKAAR-2025 provides an exhilarating platform for participants to showcase their speed, agility, and teamwork in this traditional yet thrilling sport. This event tests the players' stamina, reflexes, and strategic planning, offering a chance to excel in an intense, fast-paced competition</p><br>
-    <img src="" alt="KhoKho-poster">
+    <div class="image-div">
+      <img src="" alt="KhoKho-poster">
+    </div>
   </div>
   <br>
 
@@ -34,52 +249,55 @@
   <!--Linear in one line arrangement-->
   <div>
     <!--Student coordinator-->
-    <div>
-      <div1>
+    <div class="card-section">
+      <div class="card">
         <h3><b>Student Coordinator</b></h3>
         <p><b>Name:</b> </p>
         <p><b>Dept & Year:</b> </p>
         <p><b>Contact:</b> </p><br>
-      </div1>
-      <div2>
+      </div>
+      <div class="card">
+        <h3><b>Student Coordinator</b></h3>
         <p><b>Name:</b> </p>
         <p><b>Dept & Year:</b> </p>
         <p><b>Contact:</b> </p><br>
-      </div2>
+      </div>
     </div>
   </div>
 
   <!--Rules and Guidelines-->
-  <section1>
-    <div>
-      <h3>Rules and Guidelines</h3>
-    </div>
-    <div>
-      <ul>
-        <li><p><b>Team Size:</b> Each team must consist of 12 players, with 9 active players on the field and up to 4 substitutes</p></li>
-        <li><p><b>Duration:</b> The match will be played in 2 halves, each lasting 7-9 minutes</p></li>
-        <li><p><b>Round Structure:</b> Knockout or league format based on the number of registered teams</p></li>
-      </ul>
-    </div>
-  </section1><br>
+  <div class="note-section">
+    <section class="note-card">
+      <div>
+        <h3>Rules and Guidelines</h3>
+      </div>
+      <div>
+        <ul>
+          <li><p><b>Team Size:</b> Each team must consist of 12 players, with 9 active players on the field and up to 4 substitutes</p></li>
+          <li><p><b>Duration:</b> The match will be played in 2 halves, each lasting 7-9 minutes</p></li>
+          <li><p><b>Round Structure:</b> Knockout or league format based on the number of registered teams</p></li>
+        </ul>
+      </div>
+    </section><br>
+  
+    <!--Performance requirements-->
+    <section class="note-card">
+      <div>
+        <h3>Requirements</h3>
+      </div>
+      <div>
+        <ul>
+          <li><p><b>Gameplay:</b> Players must demonstrate quick reflexes, agility, and precise coordination to tag out opponents or evade being tagged</p></li>
+          <li><p><b>Strategy:</b> A clear and well-executed game plan, including chase rotations and evasion tactics, is essential for success</p></li>
+          <li><p><b>Team Dynamics:</b> Effective communication and efficient player substitutions are crucial to maintaining energy and focus throughout the game</p></li>
+        </ul>
+      </div>
+    </section>
+  </div><br>
 
-  <!--Performance requirements-->
-  <section2>
+  <section>
     <div>
-      <h3>Requirements</h3>
-    </div>
-    <div>
-      <ul>
-        <li><p><b>Gameplay:</b> Players must demonstrate quick reflexes, agility, and precise coordination to tag out opponents or evade being tagged</p></li>
-        <li><p><b>Strategy:</b> A clear and well-executed game plan, including chase rotations and evasion tactics, is essential for success</p></li>
-        <li><p><b>Team Dynamics:</b> Effective communication and efficient player substitutions are crucial to maintaining energy and focus throughout the game</p></li>
-      </ul>
-    </div>
-  </section2><br>
-
-  <section3>
-    <div>
-    <b>Note</b>
+    <b class="note-header">Note</b>
       <!--Center with no points-->
       <ul>
         <li><p>Teams are responsible for bringing their own uniforms and appropriate sports gear</p></li>
@@ -87,23 +305,25 @@
         <li><p>All participants must thoroughly understand and follow the rules of Kho Kho to ensure a fair and competitive environment</p></li>
       </ul>
     </div><br>
-    <div>
-      <!--in left side-->
-      <p><b>Registration Fee:</b> Rs.800 per Team</p>
-    </div>
-    <div>
-      <!--in right side-->
-      <p><b>Registration Deadline:</b> March 1st, 2025</p>
+    <div class="div-before-button">
+      <div>
+        <!--in left side-->
+        <p><b>Registration Fee:</b> Rs.800 per Team</p>
+      </div>
+      <div>
+        <!--in right side-->
+        <p><b>Registration Deadline:</b> March 1st, 2025</p>
+      </div>
     </div><br>
-    <div>
+    <div class="div-before-button">
       <!--Center it in big size-->
-      <button type="submit"><a href="https://forms.gle/3DgmM95ckUBwUuk48">Register</a></button>
+      <a href="https://forms.gle/3DgmM95ckUBwUuk48" class="button-register">Register</a>
     </div>
-  </section3><br><br>
+  </section><br><br>
 
   <!--Footer that holds the nav properties in a vertical order, with location-->
   <footer>
-    <div>
+    <div class="footer-links">
       <ul>
         <li><a href="Home.html">Home</a></li>
         <li><a href="day1.html">Day-1</a></li>
@@ -114,14 +334,16 @@
       </ul>
     </div>
     <!--contact-->
-    <div>
-      <p><b>Contact:</b> aavishkaar@velhightech.com</p>
+    <div class="contact-info">
+      <p><b style="color: yellow">Contact:</b> aavishkaar@velhightech.com</p>
+      <p><b style="color: yellow">Address:</b> 60,Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062</p>
+      <a
+        href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
+        >View on Google Maps</a
+      >
+      
     </div>
-    <div>
-      <p><b>Address:</b></p>
-      <p>60,Avadi-Vel Tech Road Vel Nagar Avadi, Chennai, Tamil Nadu 600062</p>
-      <a href="https://www.google.com/maps/dir//60,Avadi+%E2%80%93+Vel+Tech+Road+Vel+Nagar+Avadi,+Chennai,+Tamil+Nadu+600062/@13.18777,80.0240208,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a5289f3c89fd863:0x3c95d01e643e23f1!2m2!1d80.1064227!2d13.1877832?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D">G-map</a>
-    </div><br>
+    <br />
   </footer>
 </body>
 </html>
